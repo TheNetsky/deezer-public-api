@@ -11,7 +11,7 @@ This is forked from https://github.com/zaosoula/deezer-public-api, but now uses 
 ## Usage example
 
 ```js
-const DeezerPublicApi = require("@muhimur/deezer-public-api");
+const DeezerPublicApi = require("@TheNetsky/deezer-public-api");
 const deezer = new DeezerPublicApi();
 
 // Search a track
