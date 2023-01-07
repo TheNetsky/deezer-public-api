@@ -4,7 +4,6 @@ let deezer = new DeezerPublicApi();
 let artistName = 'ILYSH';
 
 deezer.search.artist(artistName).then((artists) => {
-console.log(artists)
   let artist = artists.data.find((artist) => {
     console.log(artist.name);
     return artist.name == artistName

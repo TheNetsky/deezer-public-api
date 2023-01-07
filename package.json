@@ -1,6 +1,6 @@
 {
   "name": "deezer-public-api",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is Nodejs wrapper for the Deezer Public API that return promises.",
   "keywords": [
     "deezer-api",

@@ -348,7 +348,7 @@ DeezerPublicApi.prototype.search = function (options, order, limit, index) {
   let query = "";
   if (typeof options === "object") {
     for (let key in options) {
-      query = query + key + ":'" + options[key] + '" ';
+      query = query + key + ':"' + options[key] + '" ';
     }
   } else {
     query = options;
