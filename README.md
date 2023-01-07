@@ -6,7 +6,7 @@ This is forked from https://github.com/zaosoula/deezer-public-api, but it has mo
 
 ## Installation
 
-    npm install @muhimur/deezer-public-api
+    npm install @TheNetsky/deezer-public-api
 
 ## Usage example
 
