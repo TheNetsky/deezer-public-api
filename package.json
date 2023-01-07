@@ -1,6 +1,6 @@
 {
   "name": "deezer-public-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is Nodejs wrapper for the Deezer Public API that return promises.",
   "keywords": [
     "deezer-api",
@@ -19,7 +19,7 @@
     "test": "node test/index.js"
   },
   "dependencies": {
-    "petitio": "^1.4.0"
+    "needle": "^3.2.0"
   },
   "repository": {
     "type": "git",

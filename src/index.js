@@ -1,4 +1,4 @@
-const fetch = require("petitio");
+const needle = require("needle");
 const apiUrl = "https://api.deezer.com/";
 
 function DeezerPublicApi() {
@@ -396,9 +396,9 @@ function rq(url, index, limit, order, strict) {
     if (order) url = url + "&order=" + order;
     if (strict) url = url + "&strict=on";
     if (url.endsWith("?")) url = url.slice(0, -1);
-    fetch(apiUrl + url).json()
-      .then(json => {
-        resolve(json)
+    needle('get', apiUrl + url, { json: true })
+      .then(function (response) {
+        return resolve(response.body);
       }).catch((err) => reject(err));
   });
 }
