@@ -1,4 +1,4 @@
-const needle = require("needle");
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const apiUrl = "https://api.deezer.com/";
 
 function DeezerPublicApi() {
@@ -396,9 +396,11 @@ function rq(url, index, limit, order, strict) {
     if (order) url = url + "&order=" + order;
     if (strict) url = url + "&strict=on";
     if (url.endsWith("?")) url = url.slice(0, -1);
-    needle('get', apiUrl + url, { json: true })
-      .then(function (response) {
-        return resolve(response.body);
+    fetch(apiUrl + url, {
+      json: true
+    }).then(res => res.json())
+      .then(json => {
+        resolve(json)
       }).catch((err) => reject(err));
   });
 }

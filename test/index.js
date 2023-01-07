@@ -1,10 +1,9 @@
 const DeezerPublicApi = require('../src/index.js');
 let deezer = new DeezerPublicApi();
 
-let artistName = 'ILYSH';
+let artistName = 'Netsky';
 
 deezer.search.artist(artistName).then((artists) => {
-console.log(artists)
   let artist = artists.data.find((artist) => {
     console.log(artist.name);
     return artist.name == artistName

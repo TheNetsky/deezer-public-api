@@ -2,7 +2,7 @@
 
 This is **[Node.js](https://nodejs.org/en/download/)** wrapper for the [Deezer Public API](http://developers.deezer.com/api) that return promises.
 
-This is forked from https://github.com/zaosoula/deezer-public-api, but now uses [Needle](https://www.npmjs.com/package/needle).
+This is forked from https://github.com/zaosoula/deezer-public-api.
 
 ## Installation
 
